@@ -25,6 +25,10 @@ if(total>= 200){
     applyBtn.removeAttribute('disabled');
 }else { applyBtn.setAttribute("disabled", "")}
 
+document.getElementById('home-btn').addEventListener('click', function(){
+    productList.removeChild(newLi)
+})
+
 
 }
 const applyBtn = document.getElementById('apply-btn');
@@ -46,4 +50,10 @@ applyBtn.addEventListener('click', function(){
 
 })
 
+
+document.getElementById('home-btn').addEventListener('click', function(){
+    document.getElementById('total-price').innerText = '0';
+    document.getElementById('discount').innerText= '0';
+    document.getElementById('total').innerText = '0';
+})
 
