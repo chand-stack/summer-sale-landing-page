@@ -55,5 +55,9 @@ document.getElementById('home-btn').addEventListener('click', function(){
     document.getElementById('total-price').innerText = '0';
     document.getElementById('discount').innerText= '0';
     document.getElementById('total').innerText = '0';
+    total = 0;
+    document.getElementById('purchase-btn').setAttribute("disabled", "");
+    document.getElementById('apply-btn').setAttribute("disabled", "");
+    document.getElementById('input').value = '';
 })
 
